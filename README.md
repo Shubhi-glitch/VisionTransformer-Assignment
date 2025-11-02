@@ -1,83 +1,102 @@
-Vision Transformer (ViT) — CIFAR-10 Image Classification 🧠🖼️
+# Vision Transformer (ViT) — CIFAR-10 🧠📦
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)]()
+[![PyTorch](https://img.shields.io/badge/PyTorch-red.svg)]()
+[![Google Colab](https://img.shields.io/badge/Run%20on-Colab-yellow.svg)]()
+[![Dataset](https://img.shields.io/badge/CIFAR10-Dataset-green.svg)]()
+[![Status](https://img.shields.io/badge/Project-Complete-success.svg)]()
 
+This project implements a **Vision Transformer (ViT)** from scratch in **PyTorch** and trains it on the **CIFAR-10** dataset as part of KIIT University coursework.
 
+✅ Patch Embedding  
+✅ Multi-Head Self-Attention  
+✅ Transformer Encoder blocks  
+✅ Roll-number-based hyperparameters  
+✅ Attention map visualization  
+✅ Runs on Google Colab  
 
+---
 
-This repository contains a Vision Transformer (ViT) implementation from scratch using PyTorch, trained on CIFAR-10 dataset as part of an academic DL assignment.
-🚀 Pure transformer — no CNN layers
-🎓 Roll-number–based hyperparameters
-📊 Accuracy curve, confusion matrix, attention map
-📎 PDF report + notebook + model weights
+## 📂 Project Structure
 
-📦 Project Files
-FileDescriptionViT_22052412.ipynbMain training + visualization notebookPartC_Experiment_Analysis_22052412.pdfExperiment & analysis reportvit_quick_demo.pthSaved model weightsREADME.mdProject overviewReport.pdfFull assignment report
+| File | Description |
+|------|------------|
+`ViT_22052412.ipynb` | Complete ViT implementation & training  
+`Shubhi_Tiwari_ViT_Assignment.pdf` | Full report  
+`PartC_Experiment_Analysis_22052412.pdf` | Experimental analysis (plots + CM + attention map)  
+`README.md` | Documentation  
 
-📂 Folder Structure
-📁 ViT-Assignment
- ├── ViT_22052412.ipynb
- ├── PartC_Experiment_Analysis_22052412.pdf
- ├── Report.pdf
- ├── vit_quick_demo.pth
- └── README.md
+---
 
+## 🧠 Dataset — CIFAR-10
 
-🧠 Dataset
-CIFAR-10 Official Link
-🔗 https://www.cs.toronto.edu/~kriz/cifar.html
-Images download automatically inside the notebook.
-ImagesClassesSize60,0001032×32 RGB
+| Images | Classes | Size |
+|--------|--------|------|
+60,000 | 10 | 32×32 RGB  
 
-⚙️ Installation
-✅ Clone Repository
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+Official link: https://www.cs.toronto.edu/~kriz/cifar.html  
+*(auto-downloads in notebook)*
 
-✅ Create Environment & Install Dependencies
-python -m venv vit_env
-source vit_env/bin/activate   # Mac/Linux
-vit_env\Scripts\activate      # Windows
+---
 
-pip install torch torchvision numpy matplotlib scikit-learn tqdm jupyter
+## ▶️ Run on Google Colab
 
+Open notebook here:
 
-▶️ Run the Notebook
-Google Colab
-
-Open:
-ViT_22052412.ipynb
-
-
-⚡ Training Modes
-ModeUsageFast Demo (CPU) ✅Trains subset of data, ~1–2 minutesFull Training (GPU) 🚀High accuracy training
-Colab GPU Setup
+https://colab.research.google.com/drive/1-4KpXFHpwFT7PRpQUkrwIxZiBdYHlEvq#scrollTo=f13ad3fc
 Runtime → Change runtime type → GPU
 
+Run all cells ✅
 
+---
+
+## ⚙️ Optional: Local Setup
+
+```bash
+pip install torch torchvision numpy matplotlib scikit-learn tqdm jupyter
+jupyter notebook
 📊 Results (Demo Training)
-MetricValueTrain Accuracy~52%Val Accuracy~38%Epochs1–3 (CPU Demo)
-Full GPU training yields ~80%+ accuracy.
+Metric	Value
+Train Accuracy	~52%
+Val Accuracy	~38%
+Epochs	1–3 (fast mode for assignment)
 
-🎨 Attention Map Example
-Model focuses on important image regions (patch-based attention).
+Full GPU training can reach ~80%+ accuracy
+🔎 Key Output Visualizations
 
-🧮 Roll-Number Parameter Rules
-ParameterValueHidden dim192Heads6 (adjusted → divisible)Patch size8EpochsDemo: 1-3 (Full: 12)
+✅ Training curve
 
-🧾 Academic Notes
-✅ ViT implemented manually (no torchvision ViT)
-✅ Attention, patch embedding, transformer blocks built from scratch
-✅ Includes loss curves, confusion matrix, attention heatmap
+✅ Confusion Matrix
 
-🤝 Credits
-👩‍🎓 Student: Shubhi Tiwari
-🆔 Roll: 22052412
-🏫 University: KIIT University
-🧑‍🏫 Guide: Himanshu Ranjan Sir
+✅ Attention Heatmap
 
+🎯 Roll-Number-Based Parameters
+Hyperparameter	Value
+Hidden dim	192
+Heads	6 (adjusted to be divisible)
+Patch size	8
+Epochs	Demo: 1-3 (full: 12 planned)
+👩‍🎓 Student Info
+
+Name: Shubhi Tiwari
+Roll No: 22052412
+University: KIIT University
+Course: B.Tech CSE
+Instructor: Himanshu Ranjan Sir
 ⭐ Support
-Give this project a ⭐ on GitHub if you found it useful!
 
-Want me to also generate?
-OptionOutput2️⃣ PPT Slides🎤 Presentation ready3️⃣ Viva Questions📄 Answer cheat-sheet4️⃣ Project ZIP📁 Upload-ready folder5️⃣ Demo Script🎬 For class viva video
-Reply with the number(s) 👇 to receive them ✅
+If you found this helpful, please ⭐ star the repository!
+
+
+---
+
+### ✅ Done  
+Your README is clean, academic-ready, and GitHub-ready.
+
+If you want, I can also give you:
+
+- PPT slides 🎤
+- Viva Q&A sheet 📄
+- Final zip submission folder 📦
+
+Just tell me 😊
